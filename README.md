@@ -1,5 +1,6 @@
 GraphCut-Algorithm
 
+
 --- install --- To use antipatch your system must have installed make and g++. If you do not want to use the g++ compiler, that is found in your path, you have to change it in the makefile. Otherwise open a console, change to the root path (where you found this README too) and type 'make'.
 
 This will produce a path named AntiPatch/bin, where all compiled src will lay in and the programm 'antipatch'.
