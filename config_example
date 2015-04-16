@@ -1,0 +1,28 @@
+config file for adapatch.
+lines not starting with a '-' character will be ignored.
+
+paths can be relativ or absolute
+absolute paths shpuld start with:
+		"C:\" or "/"
+relative paths should start with:
+		"path\...\end" oder "path/.../end" 
+or		"..\path\...\end" oder "../path/.../end"
+NOT		".\path\...\end" oder "./path/.../end"!
+
+
+-a mean										used avg-format
+-n testresults/surfaceOnly					Path end Filename-start to created data
+-c A										chain denotation
+-f 0.1873902								if delta is already calculated, otherwise set -f = -1 (or use default)
+-g testdata/testfiles/oneValue.onlyInternal	path to antigenic weights relative to adapatch
+-s testdata/3hmg							path to structure
+-p 2										minimal patchsize
+-x true										print String for python Skript for siteAssignment
+-y true										print aValues and Residues for agwDistributionPlot
+-z 0.75          	            			thresh search for best beta
+-t 1										antigenic weight threshold
+-u true										analyze only surface
+-m true										print pymol (pml) scripts
+-b testdata/3HMG.pdb						path to pdb file relative to adapatch
+-r oneValueInternal							name of created pictures
+-k true										print information on console
