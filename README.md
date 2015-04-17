@@ -1,14 +1,26 @@
-GraphCut-Algorithm
+## PatchInference
+
+This repository contains the source code of the graph-cut algorithm (AntiPatch) to infer patches on the surface of proteins.
+The source code is located under AntiPatch/src/.
 
 
---- install --- To use antipatch your system must have installed make and g++. If you do not want to use the g++ compiler, that is found in your path, you have to change it in the makefile. Otherwise open a console, change to the root path (where you found this README too) and type 'make'.
+### How to install
+To use antipatch your system must have installed make and g++. If you do not want to use the g++ compiler, that is found in your path, you have to change it in the makefile. Otherwise open a console, change to the root path (where you found this README too) and type 'make'.
 
 This will produce a path named AntiPatch/bin, where all compiled src will lay in and the programm 'antipatch'.
 
 The command 'make dist-clean' will delete all exept the program 'antipatch' and the src files.
 
---- run --- To run antipatch you have the choice to edit the config file or to type the parameter in your system.
+### How to run
+To run antipatch you have the choice to edit the config file or to type the parameter in your system.
 
 - use config: ./antipatch config_surfaceOnly
 - use paramter option: ./antipatch -i testdata/SEAS_H1_dnds.pfd -n testresults/surfaceAndBurried -g testdata/testfiles/oneValue.onlyInternal -s testdata/3hmg -f 0.187 -b testdata/3HMG.pdb -r oneValueInternal
-please ask questions and reports faults to tkl15@helmholtz-hzi.de
+
+Alternatively, you can run the bash script produceResults.sh to infer patches for the reference hemagglutinin strukture (PDB identifier 3HMG).
+- just type: bash produceResults.sh
+
+With the -h option you can request help to start the program.
+
+### Questions 
+Please ask questions and report faults to <tkl15@helmholtz-hzi.de>
