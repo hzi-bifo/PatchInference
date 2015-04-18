@@ -1,6 +1,7 @@
 ## PatchInference
 
 This repository contains the source code source code for AntiPatch, a software for inference of antigenicity-altering patches of sites on a protein structure.
+
 For reference, please cite "Determination of antigenicity-altering patches of sites on the major surface protein of human influenza A/H3N2 viruses (in review)".
 
 
