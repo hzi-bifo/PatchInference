@@ -1,8 +1,10 @@
 ## PatchInference
 
-This repository contains the source code of the graph-cut algorithm (AntiPatch) to infer patches on the surface of proteins.
-The source code is located under AntiPatch/src/.
+This repository contains the source code source code for AntiPatch, a software for inference of antigenicity-altering patches of sites on a protein structure.
+For reference, please cite "Determination of antigenicity-altering patches of sites on the major surface protein of human influenza A/H3N2 viruses (in review)".
 
+
+The source code is located under AntiPatch/src/.
 
 ### How to install
 To use antipatch your system must have installed make and g++. If you do not want to use the g++ compiler, that is found in your path, you have to change it in the makefile. Otherwise open a console, change to the root path (where you found this README too) and type 'make'.
