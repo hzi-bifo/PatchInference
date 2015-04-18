@@ -15,7 +15,7 @@ The command 'make dist-clean' will delete all exept the program 'antipatch' and 
 To run antipatch you have the choice to edit the config file or to type the parameter in your system.
 
 - use config: ./antipatch config_surfaceOnly
-- use parameter option: ./antipatch -g testdata/oneValue.onlyInternal -z 1.1 -u false -s testdata/3hmg -b testdata/3HMG.pdb -c "A"  -p 1 -k true
+- use parameter option: ./antipatch -n $outDir/$name -g $inFile -z $stop -r $name -u $surfOption -s $surfacedata -b $pdb -c "A"  -p 1 -k true
 
 Alternatively, you can run the bash script produceResults.sh to infer patches for the reference hemagglutinin structure (PDB identifier 3HMG).
 - just type: bash produceResults.sh
